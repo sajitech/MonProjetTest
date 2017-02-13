@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Les Modules</title>
+    
+        <!--Chargement du script Angular-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js" integrity="sha256-3SrLjPeRPa1ofM280r+OMcUjJZKLWJHr6SRtRu3dRb0=" crossorigin="anonymous"></script>
+
+        <!--Chargement de l'application-->
+        <script src="js/nosContacts.js"></script>
+
+        <!--Chargement de l'application-->
+        <script src="js/contactsController.js"></script>
+</head>
+
+
+<!--Chargement de notre application AngularJS-->
+<body ng-app="nosContacts">
+    <div ng-controller="contactsController">
+        <div ng-include ="templates/main.htm"></div>
+        <div ng-include ="templates/header.htm"></div>
+    </div>
+
+</body>
+
+
+</html>
